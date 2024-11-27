@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan HTML</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+      }
+      .gambar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+      .formulir {
+        margin-bottom: 20px;
+      }
+      .formulir label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+      .formulir input {
+        width: 93%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .formulir button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .formulir button:hover {
+        background-color: #0056b3;
+      }
+      .tabel {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      .tabel th,
+      .tabel td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      .tabel th {
+        background-color: #007bff;
+        color: white;
+      }
+      .tabel tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .tabel tr:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--Contoh Gambar-->
+      <img src="nando2.jpg" alt="Deskripsi Gambar" id="gambarUtama" class="gambar" />
+
+      <!--Contoh Formulir-->
+      <form action="/submit" method="POST" class="formulir">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <!--Contoh Tabel-->
+      <p><b>Data Ekspedisi Gunung Merbabu</b></p>
+      <table class="tabel">
+        <tr>
+          <th>Nama</th>
+          <th>Usia</th>
+          <th>Asal Universitas</th>
+        </tr>
+        <tr>
+          <td>Thoriq</td>
+          <td>20</td>
+          <td>UIN Sunan Kalijaga</td>
+        </tr>
+        <tr>
+          <td>Jihad</td>
+          <td>20</td>
+          <td>UIN Sunan Kalijaga</td>
+        </tr>
+        <tr>
+          <td>Nando</td>
+          <td>19</td>
+          <td>UIN Sunan Kalijaga</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
