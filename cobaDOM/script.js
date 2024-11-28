@@ -10,4 +10,6 @@ nodeA.setAttribute("href", "https://www.google.com");
 const lists = document.getElementsByTagName("li");
 for (let i = 0; i < lists.length; i++) {
   lists[i].style.backgroundColor = "grey";
+  lists[i].textContent = `List baru ${i + 1}`;
+  lists[i].style.fontFamily = "Sans Serif";
 }
